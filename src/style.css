@@ -1,88 +1,209 @@
 * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #050505;
-            color: white;
-        }
 
-        header {
-            text-align: center;
-            padding: 30px;
-            border-bottom: 2px solid #d4a017;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        header img {
-            width: 160px;
-            height: 160px;
-            object-fit: contain;
-            margin-bottom: 15px;
-        }
 
-        header h1 {
-            color: #d4a017;
-            font-size: 32px;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+}
 
-        header p {
-            margin-top: 8px;
-            color: #ccc;
-        }
 
-        main {
-            width: 90%;
-            max-width: 900px;
-            margin: 40px auto;
-        }
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background-color: #000;
+}
 
-        section {
-            margin-bottom: 40px;
-        }
 
-        h2 {
-            color: #d4a017;
-            border-bottom: 1px solid #d4a017;
-            padding-bottom: 8px;
-            margin-bottom: 20px;
-        }
+header img {
+    width: 130px;
+}
 
-        .jogadores {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
-        }
 
-        .jogador {
-            background-color: #111;
-            border: 1px solid #333;
-            border-radius: 10px;
-            padding: 18px;
-        }
+header h1 {
+    margin-top: 10px;
+    color: #d4a017;
+    font-size: 36px;
+}
 
-        .jogador h3 {
-            color: white;
-            margin-bottom: 8px;
-        }
 
-        .jogador p {
-            color: #aaa;
-        }
+header p {
+    color: #aaa;
+    margin-top: 5px;
+}
 
-        .lesionado {
-            border-color: #b33;
-        }
 
-        .lesionado p {
-            color: #e57373;
-        }
+nav {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
 
-        footer {
-            text-align: center;
-            padding: 25px;
-            border-top: 1px solid #333;
-            color: #777;
-        }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+nav a:hover {
+    color: #d4a017;
+}
+
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+
+section {
+    margin-bottom: 50px;
+}
+
+
+h2 {
+    color: #d4a017;
+    margin-bottom: 20px;
+}
+
+
+section > p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+
+.camisa {
+    text-align: center;
+}
+
+
+.camisa img {
+    width: 300px;
+    max-width: 100%;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+
+.camisa p {
+    color: #aaa;
+}
+
+
+
+.jogadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.jogador {
+    width: 180px;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+
+.jogador:hover {
+    transform: translateY(-4px);
+    border-color: #d4a017;
+}
+
+
+.jogador h3 {
+    margin-bottom: 8px;
+}
+
+
+.jogador p {
+    color: #aaa;
+}
+
+
+.jogador span {
+    display: block;
+    margin-top: 8px;
+    color: #e57373;
+    font-size: 14px;
+}
+
+
+.informacoes {
+    text-align: center;
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.info div {
+    background-color: #222;
+    padding: 20px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+
+.info strong {
+    color: #d4a017;
+}
+
+
+.info p {
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+
+    nav a {
+        margin: 5px;
+    }
+
+
+    .jogadores {
+        justify-content: center;
+    }
+
+
+    .jogador {
+        width: 100%;
+    }
+
+}
