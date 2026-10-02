@@ -18,7 +18,7 @@ Objetivo do projeto:
 
 Criar uma página simples para apresentar o nosso time e organizar as principais informações sobre os jogadores.
 
-Tecnologias utilizadas:
+Usamos:
 
 HTML
 CSS
