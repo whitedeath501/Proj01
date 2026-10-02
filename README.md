@@ -8,11 +8,11 @@ O projeto foi desenvolvido utilizando HTML, CSS e JavaScript.
 
 Participantes do trabalho:
 
-Adriano Egídio
-Edilson
-Alexandre
-Higor
-Daniel Lima
+Adriano Egídio, 
+Edilson, 
+Alexandre, 
+Higor, 
+Daniel Lima.
 
 Objetivo do projeto:
 
